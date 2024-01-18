@@ -1,4 +1,4 @@
-name: Deploy KOREA FOOD S-ERP WEB APP
+name: Deploy Portfolio WEB APP
 on:
   push:
     branches:
@@ -67,7 +67,7 @@ jobs:
         with:
           local: "dist/"
           remote: "/var/www/portofolio3/"
-          #          strip_components: 1
+          strip_components: 1
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
           privateKey: ${{ secrets.SSH_PRIVATE_KEY }}
