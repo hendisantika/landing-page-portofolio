@@ -10,7 +10,7 @@
 
           <div>
             <h3 class="contact__title">Call me</h3>
-            <span class="contact__subtitle">081914209656</span>
+            <span class="contact__subtitle">081321411881</span>
           </div>
         </div>
 
@@ -19,7 +19,7 @@
 
           <div>
             <h3 class="contact__title">Email</h3>
-            <span class="contact__subtitle">hilmanfirdaus48@gmail.com</span>
+            <span class="contact__subtitle">hendisantika@yahoo.co.id</span>
           </div>
         </div>
 
@@ -28,7 +28,7 @@
 
           <div>
             <h3 class="contact__title">Location</h3>
-            <span class="contact__subtitle">Cigondewah - Kota Bandung</span>
+            <span class="contact__subtitle">Bojongsoang - Kabupaten Bandung</span>
           </div>
         </div>
       </div>

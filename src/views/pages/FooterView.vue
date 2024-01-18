@@ -3,7 +3,7 @@
     <div class="footer__bg">
       <div class="footer__container container grid">
         <div>
-          <h1 class="footer__title">Hilman Firdaus</h1>
+          <h1 class="footer__title">Hendi Santika</h1>
           <span class="footer__subtitle">Fullstack Developer</span>
         </div>
 
@@ -15,7 +15,7 @@
             <a class="footer_link" href="#portfolio">Portofolio</a>
           </li>
           <li>
-            <a class="footer_link" href="#contact">Contactme</a>
+            <a class="footer_link" href="#contact">Contact Me</a>
           </li>
         </ul>
 
@@ -34,7 +34,7 @@
         </div>
       </div>
 
-      <p class="footer__copy">&#169; Hilmanfirdaus. All right reserved</p>
+      <p class="footer__copy">&#169; hendisantika. All right reserved</p>
     </div>
   </footer>
 </template>

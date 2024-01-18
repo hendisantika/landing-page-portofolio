@@ -1,7 +1,7 @@
 <template>
   <header id="header" class="header">
     <nav class="nav container">
-      <a class="nav__logo" href="#">Hilman Firdaus</a>
+      <a class="nav__logo" href="#">Hendi Santika</a>
 
       <div id="nav-menu" class="nav__menu">
         <ul class="nav__list grid">
@@ -27,12 +27,12 @@
           </li>
           <li class="nav__item">
             <a class="nav__link" href="#portfolio">
-              <i class="uil uil-scenery nav__icon"></i> Portofolio
+              <i class="uil uil-scenery nav__icon"></i> Portfolio
             </a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="#contact">
-              <i class="uil uil-message nav__icon"></i> Contactme
+              <i class="uil uil-message nav__icon"></i> Contact Me
             </a>
           </li>
         </ul>

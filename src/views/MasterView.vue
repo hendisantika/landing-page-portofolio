@@ -1,6 +1,6 @@
 <template>
   <!--==================== HEADER ====================-->
-  <headerr/>
+  <header/>
 
   <!--==================== MAIN ====================-->
   <main class="main">
@@ -33,7 +33,7 @@
   </main>
 
   <!--==================== FOOTER ====================-->
-  <footerr/>
+  <footer/>
 
   <!--==================== SCROLL TOP ====================-->
   <a id="scroll-up" class="scrollup" href="#">
@@ -43,7 +43,6 @@
 
 
 <script>
-import Headerr from './pages/HeaderrView.vue';
 import Home from './pages/HomeView.vue';
 import About from './pages/AboutView.vue';
 import Skills from './pages/SkillsView.vue';
@@ -53,11 +52,10 @@ import Portfolio from './pages/PortfolioView.vue';
 import Project from './pages/ProjectView.vue';
 import Testimonial from './pages/TestimonialView.vue';
 import Contact from './pages/ContactView.vue';
-import Footerr from './pages/FooterView.vue';
 
 export default {
   components: {
-    Headerr,
+    Header,
     Home,
     About,
     Skills,
@@ -67,7 +65,7 @@ export default {
     Project,
     Testimonial,
     Contact,
-    Footerr
+    Footer
   },
   name: 'Master'
 };

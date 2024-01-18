@@ -12,7 +12,7 @@
 
             <div>
               <h1 class="skills__titles">Frontend developer</h1>
-              <span class="skills__subtitle">More than 4 years</span>
+              <span class="skills__subtitle">More than 8 years</span>
             </div>
 
             <i class="uil uil-angle-down skills__arrow"></i>
@@ -67,7 +67,7 @@
 
             <div>
               <h1 class="skills__titles">Backend developer</h1>
-              <span class="skills__subtitle">More than 2 years</span>
+              <span class="skills__subtitle">More than 15 years</span>
             </div>
 
             <i class="uil uil-angle-down skills__arrow"></i>

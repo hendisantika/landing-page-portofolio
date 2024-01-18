@@ -37,7 +37,7 @@
         </div>
 
         <div class="home__data">
-          <h1 class="home__title">Hi, I'am Hilman Firdaus</h1>
+          <h1 class="home__title">Hi, I'am HENDI SANTIKA</h1>
           <h3 class="home__subtitle"> Fullstack Developer</h3>
           <p class="home__description">High level experience in web design and development knowledge, producing quality
             work.
