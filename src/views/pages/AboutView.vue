@@ -27,7 +27,7 @@
         </div>
 
         <div class="about__buttons">
-          <a class="button button--flex" download="" href="frontend/assets/pdf/Hilman-Firdaus-CV.pdf">
+          <a class="button button--flex" download="" href="frontend/assets/pdf/CV_HendiSantika_SEPT_2023.pdf">
             Download CV<i class="uil uil-download-alt button__icon"></i>
           </a>
         </div>
