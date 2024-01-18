@@ -43,6 +43,8 @@
 
 
 <script>
+import Header from './pages/HeaderView.vue';
+import Footer from './pages/FooterView.vue';
 import Home from './pages/HomeView.vue';
 import About from './pages/AboutView.vue';
 import Skills from './pages/SkillsView.vue';
