@@ -1,0 +1,83 @@
+name: Deploy KOREA FOOD S-ERP WEB APP
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'src/**'
+      - '.github/workflows/main.yml'
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - uses: pnpm/action-setup@v2
+        name: Install pnpm
+        with:
+          version: 8
+          run_install: false
+
+      - name: Get pnpm store directory
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
+        with:
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Run Production
+        run: pnpm run build
+
+      - name: Pull environment form variable
+        run: echo "$ENV_GITHUB" > .env_github
+
+      - id: dotenv_github
+        name: Read dotenv file for github env
+        uses: falti/dotenv-action@v1.0.4
+        with:
+          path: '.env_github'
+          export-variables: true
+          log-variables: false
+          mask-variables: true
+          keys-case: 'bypass'
+
+      - name: Install SSH Key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          known_hosts: 'just-a-placeholder-so-we-dont-get-errors'
+
+      - name: Deploy to server
+        uses: garygrossgarten/github-action-scp@release
+        with:
+          local: "dist/"
+          remote: "/var/www/portofolio3/"
+          #          strip_components: 1
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          privateKey: ${{ secrets.SSH_PRIVATE_KEY }}
+          recursive: true
+          verbose: true
+          dotfiles: true
+
+      - name: Prepare VueJS 3 Portofolio Web App
+        run: |
+          echo ":: =========================== ::"
+          echo "Run VueJS 3 Portofolio Web App"
+          echo "HENDI SANTIKA Portofolio"
+          echo ":: =========================== ::"
