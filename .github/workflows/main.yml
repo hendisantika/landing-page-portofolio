@@ -3,9 +3,9 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'src/**'
-      - '.github/workflows/main.yml'
+#    paths:
+#      - 'src/**'
+#      - '.github/workflows/main.yml'
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
